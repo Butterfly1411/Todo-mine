@@ -7,9 +7,8 @@ const App = () => {
 
   // LocalStorage dan o‘qish
   useEffect(() => {
-    const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
-    setTodos(savedTodos);
-  }, []);
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   // LocalStorage ga saqlash
   useEffect(() => {

@@ -140,10 +140,9 @@ input[type="checkbox"]:checked~.todo-text {
   color: var(--secondary-color);
 }
 
-@media (max-width:500px) {
+@media (max-width:900px) {
   html {
-    font-size: 12pt;
-
+    font-size: 12px;
   }
 
   #add-btn {
@@ -157,5 +156,9 @@ input[type="checkbox"]:checked~.todo-text {
   h1 {
     margin-top: 50px;
     font-size: 15vw;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 }
